@@ -1,0 +1,30 @@
+.right-content
+  position relative
+  display flex
+  align-items center
+  height 100%
+  &__img
+    display flex
+    flex-wrap wrap
+    justify-content center
+    > img
+      margin 5px
+      max-width 295px
+  &__vector
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    background-image url('./../assets/image/vector.png')
+    width 247px
+    height 247px
+    > h3
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%, -50%)
+      width 100%
+      font-size 2rem
+      font-family Alegreya-Regular
+      color $lightBrown
+      text-align center

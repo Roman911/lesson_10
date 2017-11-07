@@ -1,0 +1,84 @@
+@import'./variables.styl';
+
+.left-content
+  box-sizing border-box
+  &__head
+    > h2
+      font-size 3rem
+      font-family Alegreya-Bold
+      text-align center
+      color $darkGray
+  &__subtitle
+    > h4
+      font-family Alegreya-Bold
+      text-align center
+      color $lightBrown
+      text-transform uppercase
+  &__text
+    padding-top 50px
+    > p
+      font-family Proxima_Nova-Regular
+      text-align center
+      color $darkGray
+      font-size .8rem
+      letter-spacing .1rem
+      line-height 1.3rem
+  &__title
+    padding-top 60px
+    > h3
+      font-family Alegreya-Bold
+      text-align center
+      color $darkGray
+      font-size 1.6rem
+  &__box
+    margin 0 auto
+    padding 20px
+    display flex
+    justify-content space-between
+    align-items center
+    width 370px
+    &_left
+      width 110px
+      > h3
+        padding 10px 0
+        border-top 1px solid alpha($darkGray, .2)
+        border-bottom 1px solid alpha($darkGray, .2)
+        font-family Alegreya-Regular
+        text-align center
+        color $darkGray
+        letter-spacing .1rem
+    &_avatar
+      > img
+        width 100px
+        height 100px
+        border 2px solid $white
+        border-radius 50%
+    &_right
+      width 110px
+      > h3
+        padding 10px 0
+        border-top 1px solid alpha($darkGray, .2)
+        border-bottom 1px solid alpha($darkGray, .2)
+        font-family Alegreya-Regular
+        text-align center
+        color $darkGray
+        letter-spacing .1rem
+  &__quotation
+    margin 0 auto
+    padding 10px
+    display flex
+    justify-content space-between
+    width 400px
+    height 100px
+    &_left
+      align-self flex-start
+    &_center
+      align-self center
+      font-family Scriptina
+      font-size 1.7rem
+      line-height 2.4rem
+      color $lightBrown
+      text-align center
+    &_right
+      align-self flex-end
+      transform scaleX(-1)

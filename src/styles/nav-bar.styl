@@ -1,0 +1,41 @@
+@import'./variables.styl';
+
+.nav-bar__bar
+  box-sizing border-box
+  width 100%
+  border 1px solid red
+  background-color alpha($darkGray, .5)
+  height 70px
+
+.nav-bar
+  display flex
+  height 100%
+  justify-content space-between
+  align-items center
+  &__logo
+    > a
+      font-family Scriptina
+      font-size 1.6rem
+      letter-spacing .3rem
+      color $white
+  &__nav
+    min-width 770px
+    > ul
+      display flex
+      height 100%
+      justify-content space-between
+      align-items center
+      > li
+        color $white
+        > a
+          font-family Alegreya-Regular
+          text-transform uppercase
+          font-size .9rem
+          letter-spacing .4rem
+          color $white
+  &__icons
+    width 100px
+    display flex
+    > a
+      width 100%
+      color $white

@@ -1,0 +1,63 @@
+@import'./variables.styl';
+
+mainPosition = '.main__bg-shadow,.main__tittle,.main__img,.main__text,.main__btn'
+mainPositionZ = '.main__tittle,.main__img,.main__text,.main__btn,.main__img-bread'
+
+{mainPosition}
+  position absolute
+  left 50%
+  transform translateX(-50%)
+
+{mainPositionZ}
+  z-index 1
+
+.main
+  &__bg-shadow
+    top 0
+    height 100%
+    width 900px
+    border 1px solid yellow
+    border-radius 50%
+    background radial-gradient(ellipse at center, alpha($black, .7) 0%, alpha($white, 0) 100%)
+  &__tittle
+    top 29%
+    width 100%
+    > h1
+      font-family PlayfairDisplay
+      letter-spacing 0.5rem
+      font-size 5.3rem
+      text-align center
+      color white
+  &__img
+    top 48%
+  &__text
+    top 56%
+    > p
+      font-family Proxima_Nova-Regular
+      letter-spacing .2rem
+      line-height 2.2rem
+      color white
+      text-align center
+      font-size 1.3rem
+  &__btn
+    top 71%
+    &_gray
+      box-sizing border-box
+      border none
+      padding 14px 41px
+      background-color alpha($darkGray, .5)
+      font-family Alegreya-Bold
+      font-size 1rem
+      text-transform uppercase
+      letter-spacing .3rem
+      color white
+      cursor pointer
+      &:hover
+        background-color alpha($darkGray, .8)
+  &__img-bread
+    position absolute
+    top 100%
+    left 50%
+    transform translate(-50%, -50%)
+
+
